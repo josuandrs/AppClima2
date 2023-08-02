@@ -1,0 +1,117 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 1.7rem;
+    justify-content: start;
+    padding: 20px 10px 30px 50px;
+  }
+  
+  .cards .card {
+    height: 220px;
+    width: 120px;
+    background-color: #1E213A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cards .card .img {
+    height: 300px;
+    width: 80px;
+  }
+  
+  .cards .card .img img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .cards .card .box {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1.2rem;
+  }
+  
+  .cards .card .box :nth-child(2) {
+    opacity: 0.6;
+  }
+  
+  .UIM {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 1rem;
+    gap: 0.8rem;
+    padding-top: 35px;
+    margin-left: 35px;
+  }
+  
+  .UIM div {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 8px 5px 5px 8px;
+    text-align: center;
+    
+    cursor: pointer;
+  }
+  
+  
+  .UIM .active {
+    background-color: #E7E7EB;
+    color: #110E3C;
+  }
+  
+  .UIM .no-active {
+    background-color: #585676;
+    color: #E7E7EB;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1E213A;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #585676;
+  } 
+  
+  @media screen and (min-width: 50rem) {
+    .UIM {
+      justify-content: end;
+    }
+    .cards {
+      flex-wrap: nowrap;
+      overflow: hidden;
+      overflow-x: scroll;
+      max-width: 85vh;
+      height: 35vh;
+      gap: 1rem;
+    }
+    .cards .card {
+      width: 120px;
+      padding: 0 20px;
+    }
+  }
+  
+  @media screen and (min-width: 67rem) {
+  
+    .cards {
+      
+      width: 100%;
+      height: 35%;
+      gap: 2rem;
+      margin-left: 1.5rem;
+      max-width: 100%;
+      overflow: hidden;
+    }
+    .cards .card {
+      width: 130px;
+      height: 185px;
+    }
+    
+    
+  }

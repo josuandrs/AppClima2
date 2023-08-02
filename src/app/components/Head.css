@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap');
+
+#head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #1E213A;
+    height: 818px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    height: 34px;
+    margin: 10px;
+    padding: 20px 0;
+  }
+  .buttons button:first-child {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    background-color: #6E707A;
+    padding: 8px 30px;
+  }
+  
+  .buttons button:last-child {
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+  }
+  
+  .current-location {
+    width: 16px;
+    height: 16px;
+    background-color: #6E707A;
+  }
+  .current-location img {
+    width: 90%;
+    height: auto;
+    
+  }
+  
+  .img-box {
+    height: 47vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .img-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/cloud-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.1; 
+  }
+  
+  .img-box .img {
+    height: 28vh;
+    width: 25vh;
+    
+  }
+  .img-box .img img {
+    width: 100%;
+    height: 100%; 
+  }
+  
+  
+  .text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .temp {
+    font-size: 144px;
+    padding-top: 0;
+    margin-top: -45px;
+  
+  }
+  #celcious{
+    font-size: 50px;
+    opacity: 0.5;
+    padding: 0;
+    margin: 0;
+  }
+  .descri, .date, .city {
+    opacity: 0.7;
+  }
+  .descri {
+    font-size: 30px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .date, .city {
+    font-size: 18px;
+  }
+  .city {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding-top: 5px;
+  }
+  
+ 
+  .hidden#head {
+    display: none;
+  }
+  
+  
+  @media screen and (min-width: 45rem) {
+    #head {
+      gap: 2rem;
+      height: 100%;
+      min-width: 40%;
+    }
+    .text {
+      align-items: center;
+      gap: 3rem;
+    }
+    .city {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      padding-top:0;
+      padding-bottom: 80px;
+    }
+    .date {
+      padding: 0;
+      margin: -10px 0 -30px;
+    }
+  }
+  
+  @media screen and (min-width: 57rem) {
+    #head {
+      gap: 2.5rem;
+      width: 60vh;
+    }
+    
+    .city {
+      padding-bottom: 50px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    #head {
+      min-width: 500px;
+    }
+  }
